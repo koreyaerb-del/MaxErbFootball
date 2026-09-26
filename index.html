@@ -299,32 +299,50 @@
 <body class="locked">
 
   <!-- ===================== WATCH LIVE BAR (added) =====================
-       Sticky top bar linking to the live game stream. Shows on BOTH the
-       password screen and the unlocked page. To remove after the game,
-       delete this block (from the opening <a ...> through this comment's
-       matching END marker below).
+       Sticky top bar linking to this week's live stream. Shows on BOTH the
+       password screen and the unlocked page. Two stream options this week.
+       To remove after the game, delete this block (from the opening
+       <div ...> through this comment's matching END marker below).
   ================================================================== -->
-  <a href="https://thesundigitalnetwork.com/webberinternational/"
-     target="_blank" rel="noopener" id="watchLiveBar"
-     aria-label="Watch Bethel at Webber International live on The Sun Digital Network"
-     style="display:flex; align-items:center; justify-content:center; gap:.5rem 1rem;
-            flex-wrap:wrap; position:sticky; top:0; z-index:2147483000; text-decoration:none;
-            padding:11px 16px; text-align:center; line-height:1.25;
-            background:var(--band,#3C2465); color:var(--band-ink,#FFFFFF);
-            font-family:'Barlow Condensed',system-ui,-apple-system,sans-serif;
-            font-weight:700; font-size:1.06rem; letter-spacing:.015em;
-            box-shadow:0 2px 14px rgba(36,26,51,.28);">
+  <div id="watchLiveBar"
+       role="region" aria-label="Watch Bethel at University of Pikeville live"
+       style="display:flex; align-items:center; justify-content:center; gap:.5rem 1rem;
+              flex-wrap:wrap; position:sticky; top:0; z-index:2147483000;
+              padding:11px 16px; text-align:center; line-height:1.25;
+              background:var(--band,#3C2465); color:var(--band-ink,#FFFFFF);
+              font-family:'Barlow Condensed',system-ui,-apple-system,sans-serif;
+              font-weight:700; font-size:1.06rem; letter-spacing:.015em;
+              box-shadow:0 2px 14px rgba(36,26,51,.28);">
     <span style="display:inline-flex; align-items:center; gap:.4rem;
                  background:var(--gold-bright,#E8B23A); color:#241A33;
                  padding:3px 11px; border-radius:999px;
                  font-size:.78rem; font-weight:700; letter-spacing:.09em;">
       <span style="width:8px; height:8px; border-radius:50%; background:#C0392B;
                    display:inline-block; animation:erbLivePulse 1.6s infinite;"></span>
-      WATCH&nbsp;LIVE
+      LIVE&nbsp;TODAY
     </span>
-    <span>Bethel&nbsp;@&nbsp;Webber&nbsp;International &nbsp;&middot;&nbsp; Today, Sat&nbsp;9/19 &nbsp;&middot;&nbsp; 1:30&nbsp;PM&nbsp;ET</span>
-    <span style="text-decoration:underline; text-underline-offset:3px; white-space:nowrap;">Stream on The&nbsp;Sun&nbsp;Digital&nbsp;Network&nbsp;&rarr;</span>
-  </a>
+    <span>Bethel&nbsp;@&nbsp;Univ.&nbsp;of&nbsp;Pikeville &nbsp;&middot;&nbsp; Today, Sat&nbsp;9/26 &nbsp;&middot;&nbsp; 2:00&nbsp;PM&nbsp;CT&nbsp;/&nbsp;3:00&nbsp;PM&nbsp;ET</span>
+    <span style="display:inline-flex; gap:.5rem; flex-wrap:wrap; justify-content:center;">
+      <a href="https://www.youtube.com/@upikesportsnetwork4088/streams"
+         target="_blank" rel="noopener"
+         aria-label="Watch on the UPIKE Sports Network YouTube channel"
+         style="display:inline-flex; align-items:center; gap:.35rem; text-decoration:none;
+                background:var(--gold-bright,#E8B23A); color:#241A33;
+                padding:6px 15px; border-radius:8px; white-space:nowrap;
+                font-weight:700; letter-spacing:.02em;">&#9654;&nbsp;Watch&nbsp;on&nbsp;YouTube</a>
+      <a href="https://upikebears.com/watch"
+         target="_blank" rel="noopener"
+         aria-label="Watch on the UPIKE Sports Network web portal"
+         style="display:inline-flex; align-items:center; gap:.35rem; text-decoration:none;
+                background:#FFFFFF; color:var(--band,#3C2465);
+                padding:6px 15px; border-radius:8px; white-space:nowrap;
+                font-weight:700; letter-spacing:.02em;">UPIKE&nbsp;Sports&nbsp;Network</a>
+    </span>
+    <span style="font-family:'IBM Plex Sans',system-ui,sans-serif; font-weight:400; font-size:.82rem; opacity:.9;">
+      backup: <a href="https://upikebears.com/sports/football/schedule/2026" target="_blank" rel="noopener"
+                 style="color:var(--band-ink,#FFFFFF); text-decoration:underline; text-underline-offset:2px;">Live&nbsp;Stats</a>
+    </span>
+  </div>
   <style>
     @keyframes erbLivePulse{
       0%{box-shadow:0 0 0 0 rgba(192,57,43,.7)}
